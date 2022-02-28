@@ -1,3 +1,6 @@
+     
+                                /*A function to reverse the linked list in an iterative format*/
+
 public class Node {
 
     public int data;
@@ -14,32 +17,25 @@ public class Node {
         Node newNode = new Node(data);
         if(head == null)
         {
-            System.out.println("Added head as " + data);
+            
             head = newNode;
             newNode.next = null;
             newNode.data = data;
             
-            System.out.println("Head is" + data);
-            System.out.println("List is");
-            printLL(head);
-            
         }
         else{
             Node temp = head;
-            System.out.println("Added " + data);
             while(temp.next != null){
                 temp = temp.next;
             }
-
             temp.next = newNode;
             newNode.data = data;
-            newNode.next = null;
-            printLL(head);
-            
+            newNode.next = null;  
         }
-        System.out.println("Returned head as " + head.data);
+
         return(head);
     }
+
     public static Node ReverseIterative(Node head)
     {
         if(head == null)
@@ -48,7 +44,7 @@ public class Node {
             return(null);
         }
         else{
-            System.out.println("Reached with" + head.data);
+
             Node prevNode = null;
             Node currentNode = head;
             Node nextNode = null;
@@ -62,7 +58,6 @@ public class Node {
                 
             }
             head = prevNode;
-            System.out.println("head is : " + head.data);
         }
         return(head);
     }
