@@ -1,5 +1,5 @@
      
-                                /*A function to reverse the linked list in an iterative format*/
+//////////////////////////////////////*A function to reverse the linked list in an iterative format*////////////////////////////////////////
 
 public class Node {
 
